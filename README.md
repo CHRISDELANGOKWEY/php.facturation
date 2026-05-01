@@ -6,8 +6,8 @@
 3. Accéder à `http://localhost/facturation/`
 
   Compte par défaut
- Identifiant ;  Mot de passe  ;    Rôle ;
- superadmin     password        Super Administrateur 
+ Identifiant:super admin ;  Mot de passe :password ;    Rôle: super Administrateur
+   
 
   Fonctionnalités
 - Scanner code-barres (ZXing)
