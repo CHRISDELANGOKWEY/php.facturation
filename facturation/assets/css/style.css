@@ -1,0 +1,312 @@
+/* ===== IMPORTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: #f0f0f0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ===== HEADER LUXE ===== */
+header {
+    background: #000000;
+    border-bottom: 2px solid #d4af37;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.user-info span {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
+    font-weight: 500;
+}
+
+.user-info a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    border: 1px solid #d4af37;
+    border-radius: 30px;
+    transition: all 0.3s;
+    font-size: 0.85rem;
+}
+
+.user-info a:hover {
+    background: #d4af37;
+    color: #000000;
+}
+
+/* ===== NAVIGATION PREMIUM ===== */
+nav {
+    background: #141414;
+    padding: 0.8rem 2rem;
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+nav a {
+    color: #c0c0c0;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #d4af37;
+    color: #000000;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* ===== TITRES LUXE ===== */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #d4af37;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+    color: #d4af37;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #c0c0c0;
+    font-weight: 500;
+}
+
+/* ===== CARTES PREMIUM ===== */
+.card, .login-container, form, .panier, .scan-section {
+    background: #141414;
+    border-radius: 16px;
+    padding: 1.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(212,175,55,0.1);
+    border-color: #d4af37;
+}
+
+/* ===== BOUTONS LUXE ===== */
+button, .button, input[type="submit"] {
+    background: linear-gradient(135deg, #d4af37 0%, #b8960c 100%);
+    color: #000000;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    letter-spacing: 0.5px;
+}
+
+button:hover, .button:hover, input[type="submit"]:hover {
+    background: linear-gradient(135deg, #e8c547 0%, #d4af37 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(212,175,55,0.3);
+}
+
+button.danger, .btn-danger {
+    background: linear-gradient(135deg, #8b0000 0%, #5c0000 100%);
+    color: #f0f0f0;
+}
+
+button.danger:hover, .btn-danger:hover {
+    background: linear-gradient(135deg, #a00000 0%, #700000 100%);
+}
+
+/* ===== FORMULAIRES ===== */
+label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 500;
+    color: #d4af37;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.2);
+}
+
+/* ===== TABLEAUX LUXE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #0f0f0f;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+th {
+    background: #1a1a1a;
+    color: #d4af37;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: #e0e0e0;
+}
+
+tr:hover td {
+    background: #1a1a1a;
+}
+
+/* ===== MESSAGES ===== */
+.error, .alert-error {
+    background: rgba(139,0,0,0.2);
+    border-left: 4px solid #8b0000;
+    padding: 0.8rem;
+    border-radius: 8px;
+    color: #ff6b6b;
+    margin: 1rem 0;
+}
+
+.success, .alert-success {
+    background: rgba(212,175,55,0.1);
+    border-left: 4px solid #d4af37;
+    padding: 0.8rem;
+    border-radius: 8px;
+    color: #d4af37;
+    margin: 1rem 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 1px solid #2a2a2a;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* ===== SCANNER ===== */
+#scan-preview {
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #d4af37;
+}
+
+video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+/* ===== LIENS ===== */
+a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f0e68c;
+}
+
+/* ===== SCROLLBAR PREMIUM ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 4px;
+}

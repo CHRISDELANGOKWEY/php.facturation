@@ -1,0 +1,146 @@
+[
+    {
+        "id_facture": "FAC-20260430-001",
+        "date": "2026-04-30",
+        "heure": "23:09:57",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 1,
+                "sous_total_ht": 2000
+            }
+        ],
+        "total_ht": 2000,
+        "tva": 360,
+        "total_ttc": 2360
+    },
+    {
+        "id_facture": "FAC-20260430-002",
+        "date": "2026-04-30",
+        "heure": "23:11:48",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 1,
+                "sous_total_ht": 2000
+            }
+        ],
+        "total_ht": 2000,
+        "tva": 360,
+        "total_ttc": 2360
+    },
+    {
+        "id_facture": "FAC-20260430-003",
+        "date": "2026-04-30",
+        "heure": "23:55:29",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 1,
+                "sous_total_ht": 2000
+            }
+        ],
+        "total_ht": 2000,
+        "tva": 360,
+        "total_ttc": 2360
+    },
+    {
+        "id_facture": "FAC-20260430-004",
+        "date": "2026-04-30",
+        "heure": "23:58:17",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 20,
+                "sous_total_ht": 40000
+            }
+        ],
+        "total_ht": 40000,
+        "tva": 7200,
+        "total_ttc": 47200
+    },
+    {
+        "id_facture": "FAC-20260501-005",
+        "date": "2026-05-01",
+        "heure": "00:07:24",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 20,
+                "sous_total_ht": 40000
+            }
+        ],
+        "total_ht": 40000,
+        "tva": 7200,
+        "total_ttc": 47200
+    },
+    {
+        "id_facture": "FAC-20260501-006",
+        "date": "2026-05-01",
+        "heure": "00:35:34",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 2,
+                "sous_total_ht": 4000
+            }
+        ],
+        "total_ht": 4000,
+        "tva": 720,
+        "total_ttc": 4720
+    },
+    {
+        "id_facture": "FAC-20260501-007",
+        "date": "2026-05-01",
+        "heure": "00:41:52",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 1,
+                "sous_total_ht": 2000
+            }
+        ],
+        "total_ht": 2000,
+        "tva": 360,
+        "total_ttc": 2360
+    },
+    {
+        "id_facture": "FAC-20260501-008",
+        "date": "2026-05-01",
+        "heure": "18:26:39",
+        "caissier": "superadmin",
+        "articles": [
+            {
+                "code_barre": 90311017,
+                "nom": "orange",
+                "prix_unitaire_ht": 2000,
+                "quantite": 20,
+                "sous_total_ht": 40000
+            }
+        ],
+        "total_ht": 40000,
+        "tva": 7200,
+        "total_ttc": 47200
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "code_barre": "11680886897510",
+        "nom": "banane",
+        "prix_unitaire_ht": 2000,
+        "date_expiration": "04-03-2026",
+        "quantite_stock": 20,
+        "date_enregistrement": "2026-04-30"
+    },
+    {
+        "code_barre": "90311017",
+        "nom": "orange",
+        "prix_unitaire_ht": 2000,
+        "date_expiration": "04-03-2026",
+        "quantite_stock": 30,
+        "date_enregistrement": "2026-04-30"
+    }
+]

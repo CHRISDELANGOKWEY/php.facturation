@@ -1,0 +1,26 @@
+[
+    {
+        "identifiant": "superadmin",
+        "mot_de_passe": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi",
+        "role": "super_admin",
+        "nom_complet": "Super Administrateur",
+        "date_creation": "2026-04-30",
+        "actif": true
+    },
+    {
+        "identifiant": "george",
+        "mot_de_passe": "$2y$10$kqcQIczfafKcPEHYp.B3WODzMgUeV5LjBo99b9kYpUohLRrdEOodi",
+        "role": "manager",
+        "nom_complet": "alivine",
+        "date_creation": "2026-04-30",
+        "actif": true
+    },
+    {
+        "identifiant": "dupont",
+        "mot_de_passe": "$2y$10$rgik2meqm1VAqs.sBXlqiuITbO7a7\/UtAFL7GYP72qevxtO2HLIyi",
+        "role": "caissier",
+        "nom_complet": "la fontaine",
+        "date_creation": "2026-04-30",
+        "actif": true
+    }
+]
