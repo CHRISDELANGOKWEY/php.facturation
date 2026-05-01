@@ -6,7 +6,7 @@
 3. Accéder à `http://localhost/facturation/`
 
   Compte par défaut
- Identifiant:super admin ;  Mot de passe :password ;    Rôle: super Administrateur
+ Identifiant:super admin ;  Mot de passe : mot de passe en anglais;    Rôle: super Administrateur
    
 
   Fonctionnalités
