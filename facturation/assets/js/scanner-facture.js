@@ -8,13 +8,15 @@ function lancerScan() {
     codeReader.listVideoInputDevices()
         .then(devices => {
             if (devices.length === 0) {
-                document.getElementById('scan-status').innerHTML = '<p style="color:red">Aucune caméra trouvée</p>';
+                document.getElementById('scan-status').innerHTML = '<p style="color:red">Aucune caméra</p>';
                 return;
             }
             const deviceId = devices[0].deviceId;
             codeReader.decodeFromVideoDevice(deviceId, 'video-preview', (result, err) => {
                 if (result) {
-                    traiterCodeBarreFacture(result.getText());
+                    const codeBarre = result.getText();
+                    console.log("Code scanné (facture):", codeBarre);
+                    traiterCodeBarreFacture(codeBarre);
                     arreterScan();
                 }
             });
@@ -38,14 +40,19 @@ function traiterCodeBarreFacture(codeBarre) {
     fetch('/facturation/modules/produits/lire.php?code_barre=' + encodeURIComponent(codeBarre))
         .then(res => res.json())
         .then(data => {
+            console.log("Réponse serveur:", data);
             if (data.trouve) {
                 currentCodeBarre = codeBarre;
                 document.getElementById('code-barres-ajout').value = codeBarre;
                 document.getElementById('ajout-quantite').style.display = 'block';
-                document.getElementById('scan-status').innerHTML = '<p style="color:green">Produit : ' + data.produit.nom + ' (stock : ' + data.produit.quantite_stock + ')</p>';
+                document.getElementById('scan-status').innerHTML = '<p style="color:green">✅ Produit trouvé : ' + data.produit.nom + ' (stock: ' + data.produit.quantite_stock + ')</p>';
             } else {
-                document.getElementById('scan-status').innerHTML = '<p style="color:red">❌ Produit inconnu !</p>';
+                document.getElementById('scan-status').innerHTML = '<p style="color:red">❌ Produit inconnu ! (Code: ' + codeBarre + ')</p>';
             }
+        })
+        .catch(error => {
+            console.error("Erreur AJAX:", error);
+            document.getElementById('scan-status').innerHTML = '<p style="color:red">Erreur de communication</p>';
         });
 }
 
@@ -54,10 +61,7 @@ function ajouterAuPanier() {
     let form = document.createElement('form');
     form.method = 'POST';
     form.action = '';
-    form.innerHTML = `
-        <input type="hidden" name="code_barre" value="${currentCodeBarre}">
-        <input type="hidden" name="quantite" value="${qte}">
-    `;
+    form.innerHTML = '<input type="hidden" name="code_barre" value="' + currentCodeBarre + '"><input type="hidden" name="quantite" value="' + qte + '">';
     document.body.appendChild(form);
     form.submit();
 }

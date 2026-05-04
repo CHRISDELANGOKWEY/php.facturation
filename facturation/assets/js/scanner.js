@@ -1,4 +1,4 @@
-// Scanner de codes-barres avec ZXing
+ // Scanner de codes-barres avec ZXing
 let codeReader = null;
 let selectedDeviceId = null;
 

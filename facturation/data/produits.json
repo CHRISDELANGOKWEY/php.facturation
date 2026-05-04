@@ -12,7 +12,7 @@
         "nom": "orange",
         "prix_unitaire_ht": 2000,
         "date_expiration": "04-03-2026",
-        "quantite_stock": 30,
+        "quantite_stock": 17,
         "date_enregistrement": "2026-04-30"
     }
 ]

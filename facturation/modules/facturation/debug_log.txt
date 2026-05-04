@@ -1,0 +1,157 @@
+=== 2026-05-04 21:50:13 ===
+1. Session user : Array
+(
+    [identifiant] => dupont
+    [role] => caissier
+    [nom_complet] => la fontaine
+)
+
+2. Panier : Array
+(
+    [90311017] => Array
+        (
+            [nom] => orange
+            [prix] => 2000
+            [quantite] => 1
+            [sous_total] => 2000
+        )
+
+)
+
+3. Produits.json lu : Array
+(
+    [0] => Array
+        (
+            [code_barre] => 11680886897510
+            [nom] => banane
+            [prix_unitaire_ht] => 2000
+            [date_expiration] => 04-03-2026
+            [quantite_stock] => 20
+            [date_enregistrement] => 2026-04-30
+        )
+
+    [1] => Array
+        (
+            [code_barre] => 90311017
+            [nom] => orange
+            [prix_unitaire_ht] => 2000
+            [date_expiration] => 04-03-2026
+            [quantite_stock] => 28
+            [date_enregistrement] => 2026-04-30
+        )
+
+)
+
+4. Traitement code: 90311017, quantite: 1
+7. STOCK_OK = TRUE, sauvegarde...
+8. Écriture produits.json : RÉUSSIE (450 octets)
+9. Facture sauvegardée : FAC-20260504-019
+10. Panier vidé
+=== FIN ===
+
+=== 2026-05-04 22:13:03 ===
+1. Session user : Array
+(
+    [identifiant] => superadmin
+    [role] => super_admin
+    [nom_complet] => Super Administrateur
+)
+
+2. Panier : Array
+(
+    [90311017] => Array
+        (
+            [nom] => orange
+            [prix] => 2000
+            [quantite] => 10
+            [sous_total] => 20000
+        )
+
+)
+
+3. Produits.json lu : Array
+(
+    [0] => Array
+        (
+            [code_barre] => 11680886897510
+            [nom] => banane
+            [prix_unitaire_ht] => 2000
+            [date_expiration] => 04-03-2026
+            [quantite_stock] => 20
+            [date_enregistrement] => 2026-04-30
+        )
+
+    [1] => Array
+        (
+            [code_barre] => 90311017
+            [nom] => orange
+            [prix_unitaire_ht] => 2000
+            [date_expiration] => 04-03-2026
+            [quantite_stock] => 28
+            [date_enregistrement] => 2026-04-30
+        )
+
+)
+
+4. Traitement code: 90311017, quantite: 10
+5. Produit trouvé: orange, stock avant: 28
+6. Nouveau stock: 18
+7. STOCK_OK = TRUE, sauvegarde...
+8. Écriture produits.json : RÉUSSIE (450 octets)
+9. Facture sauvegardée : FAC-20260504-020
+10. Panier vidé
+=== FIN ===
+
+=== 2026-05-04 22:15:01 ===
+1. Session user : Array
+(
+    [identifiant] => dupont
+    [role] => caissier
+    [nom_complet] => la fontaine
+)
+
+2. Panier : Array
+(
+    [90311017] => Array
+        (
+            [nom] => orange
+            [prix] => 2000
+            [quantite] => 1
+            [sous_total] => 2000
+        )
+
+)
+
+3. Produits.json lu : Array
+(
+    [0] => Array
+        (
+            [code_barre] => 11680886897510
+            [nom] => banane
+            [prix_unitaire_ht] => 2000
+            [date_expiration] => 04-03-2026
+            [quantite_stock] => 20
+            [date_enregistrement] => 2026-04-30
+        )
+
+    [1] => Array
+        (
+            [code_barre] => 90311017
+            [nom] => orange
+            [prix_unitaire_ht] => 2000
+            [date_expiration] => 04-03-2026
+            [quantite_stock] => 18
+            [date_enregistrement] => 2026-04-30
+        )
+
+)
+
+4. Traitement code: 90311017, quantite: 1
+5. Produit trouvé: orange, stock avant: 18
+6. Nouveau stock: 17
+7. STOCK_OK = TRUE, sauvegarde...
+8. Écriture produits.json : RÉUSSIE (450 octets)
+9. Facture sauvegardée : FAC-20260504-021
+10. Panier vidé
+=== FIN ===
+
